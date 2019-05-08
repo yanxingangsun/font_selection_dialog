@@ -4,34 +4,32 @@
 Swing版和JavaFX版的字体选择对话框，可以做为库直接拿来使用。
 
 #### 软件架构
-软件架构说明
+Swing版本的一个文件；
+JavaFX版本界面部分独立成两个文件：FXML和控制器。
 
 
 #### 安装教程
 
-1. xxxx
-2. xxxx
-3. xxxx
+下载解压缩，用NetBeans11打开即可。
 
 #### 使用说明
 
-1. xxxx
-2. xxxx
-3. xxxx
+1. Swing版本导入库后，调用只用下面一句代码：
+```
+字体对话框.显示()；//返回java.awt.Font对象，详情可参见main函数
+```
 
-#### 参与贡献
+2. JavaFX版导入库后，调用需三句代码：
 
-1. Fork 本仓库
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
+```
+//返回javafx.scene.text.Font对象，详情可参见"测试.测试界面"
+字体对话框 dialog=new 字体对话框();
+Optional<Font> result = dialog.showAndWait();
+result.ifPresent(f -> {System.out.println(f);}); 
+```
 
+#### 软件截图
 
-#### 码云特技
+1. ![输入图片说明](https://images.gitee.com/uploads/images/2019/0508/092154_f26ae497_76449.png "font1.png")
+2. ![输入图片说明](https://images.gitee.com/uploads/images/2019/0508/092223_3ed7a3f0_76449.png "font2.png")
 
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
