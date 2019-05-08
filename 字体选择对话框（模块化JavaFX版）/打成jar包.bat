@@ -1,0 +1,4 @@
+rem 编译后可以打包成jar文件
+jar -cf 模块化字体对话框fx.jar -C build/modules/字体 . 
+rem 下面是执行测试的
+java -p ..\openjfx12.0.1库\win64\javafx-sdk-12.0.1\lib\javafx-swt.jar;..\openjfx12.0.1库\win64\javafx-sdk-12.0.1\lib\javafx.base.jar;..\openjfx12.0.1库\win64\javafx-sdk-12.0.1\lib\javafx.controls.jar;..\openjfx12.0.1库\win64\javafx-sdk-12.0.1\lib\javafx.fxml.jar;..\openjfx12.0.1库\win64\javafx-sdk-12.0.1\lib\javafx.graphics.jar;..\openjfx12.0.1库\win64\javafx-sdk-12.0.1\lib\javafx.media.jar;..\openjfx12.0.1库\win64\javafx-sdk-12.0.1\lib\javafx.swing.jar;..\openjfx12.0.1库\win64\javafx-sdk-12.0.1\lib\javafx.web.jar;模块化字体对话框fx.jar -m 字体/测试.启动
